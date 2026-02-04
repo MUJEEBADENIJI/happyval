@@ -279,3 +279,34 @@ button {
   20% { height: 12px; }
   100% { height: 12px; }
 }
+
+@media (max-width: 480px) {
+  .loader {
+    width: 160px;
+    height: 60px;
+    gap: 0.6rem;
+  }
+
+  .loader .container {
+    height: 260px; /* key fix */
+  }
+
+  .loader .love {
+    width: 24px;
+    height: 24px;
+  }
+
+  .loader .love::before,
+  .loader .love::after {
+    width: 24px;
+    height: 24px;
+  }
+
+  .loader .robots {
+    height: 48px;
+  }
+
+  .loader .death {
+    height: 48px;
+  }
+}
